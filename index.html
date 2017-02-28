@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Weather App</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous"> -->
+		<script type="text/javascript" src="javascript/weather.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+			<h1>Welcome Please Enter Zip or City to see your current weather.</h1>
+				<input type="text" placeholder="City"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
+				<input type="text" placeholder="Zip Code"><button type="button" class="query_btn btn btn-default btn-sm">Search</button><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 text-center">
+				<h2>City: <span id="city"></span></h2>
+				<h2>Main Weather: <span id="main_weather"></span></h2>
+				<h2>Description: <span id="description_weather"></span></h2>
+				<img id="weather_image" src="">
+				<h2>Temperature: <span id="temperature"></span></h2>
+				<button id="convertToCelsius" class="btn btn-default btn-sm">Convert to Celsius</button>
+				<button id="convertToFahrenheit" class="btn btn-default btn-sm">Convert to FahrenHeit</button>
+				<h2>Pressure: <span id="pressure"></span></h2>
+				<h2>Humidity: <span id="humidity"></span></h2>
+			</div>
+		</div>
+	</body>
+</html>
